@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "salescircle",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/matar/workplace/gitlab/goldware/salescircle/salescircle_front/amplify/backend/api/salescircle/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authsalescircle"
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 7,
+        "apiKeyExpirationDate": "2022-03-08T08:20:50.630Z",
+        "keyDescription": "salescircle api key"
+      },
+      {
+        "mode": "AWS_IAM"
+      }
+    ]
+  }
+}

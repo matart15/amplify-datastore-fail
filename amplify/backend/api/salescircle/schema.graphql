@@ -1,0 +1,15 @@
+type Door @model @auth(rules: [{allow: public}, {allow: private}]) {
+  id: ID!
+  name: String!
+  allowedCompanies: [String]
+  daitimeUnlockAllowedMembers: [String]
+  httpEndpoint: String!
+  serviceUuid: String!
+  index: Int!
+  imageUrl: String!
+  isOpenDaily: Boolean!
+}
+type Mutation {
+  openDoor(doorId: ID!): Boolean
+    @function(name: "openDoor-${env}")
+}

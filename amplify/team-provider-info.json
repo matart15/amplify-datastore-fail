@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-salescircle-dev-105829-authRole",
+      "UnauthRoleArn": "arn:aws:iam::945731703827:role/amplify-salescircle-dev-105829-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::945731703827:role/amplify-salescircle-dev-105829-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-salescircle-dev-105829-deployment",
+      "UnauthRoleName": "amplify-salescircle-dev-105829-unauthRole",
+      "StackName": "amplify-salescircle-dev-105829",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:945731703827:stack/amplify-salescircle-dev-105829/ab815130-6c38-11ec-a610-0a322fb4d627",
+      "AmplifyAppId": "d2f4e05nnjbjnf",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-salescircle-dev-105829-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "function": {
+        "salescirclePostConfirmation": {
+          "deploymentBucketName": "amplify-salescircle-dev-105829-deployment",
+          "s3Key": "amplify-builds/salescirclePostConfirmation-4b674c715a634634476e-build.zip"
+        },
+        "doors": {
+          "deploymentBucketName": "amplify-salescircle-dev-105829-deployment",
+          "s3Key": "amplify-builds/doors-444d4b4544744c48512f-build.zip"
+        },
+        "openDoor": {
+          "deploymentBucketName": "amplify-salescircle-dev-105829-deployment",
+          "s3Key": "amplify-builds/openDoor-78536e43374932726537-build.zip"
+        }
+      },
+      "auth": {
+        "userPoolGroups": {},
+        "salescircle": {}
+      }
+    }
+  }
+}

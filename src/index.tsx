@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Amplify from 'aws-amplify';
+import { awsExports } from 'src/@app/libs/getAwsExports';
+// import { DataStore } from '@aws-amplify/datastore';
+
+Amplify.configure(awsExports);
+// Amplify.Logger.LOG_LEVEL = 'DEBUG';
+// DataStore.start();
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
